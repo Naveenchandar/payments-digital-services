@@ -1,0 +1,85 @@
+.month-select-grid .MuiSelect-select {
+    padding: 0.6rem !important;
+}
+
+.month-select-grid {
+    transform: translate(-20px, 0px) !important;
+    margin-top: 0.5rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.reward-tabs .slider_section {
+    /* width: 72rem !important; */
+    height: 17rem !important;
+    margin-bottom: 2rem !important;
+    margin-left: 2rem !important;
+}
+
+.slider-container_slider_section_champions_image {
+    background-color: var(--primary) !important;
+    background: hsla(17, 95%, 50%, 1) !important;
+    background: linear-gradient(90deg, hsla(17, 95%, 50%, 1) 0%, hsla(42, 94%, 57%, 1) 100%) !important;
+    background: -moz-linear-gradient(90deg, hsla(17, 95%, 50%, 1) 0%, hsla(42, 94%, 57%, 1) 100%) !important;
+    background: -webkit-linear-gradient(90deg, hsla(17, 95%, 50%, 1) 0%, hsla(42, 94%, 57%, 1) 100%) !important;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#F74C06", endColorstr="#F9BC2C", GradientType=1) !important;
+
+}
+
+.reward-tabs .slider_section {
+    color: #fff !important;
+    font-weight: 500;
+    text-align: left !important;
+    padding: 0 1rem !important;
+}
+
+.slider-container_slider_section_champions_image .MuiPaper-root {
+    padding: 1rem !important;
+    min-height: 250px !important;
+    height: 250px !important;
+    max-height: 250px !important;
+}
+
+.containe_slider_section_champions_title {
+    font-weight: bolder !important;
+    padding: 0 1rem !important;
+}
+
+.slick-slider .slick-prev:before,
+.slick-slider .slick-next:before {
+    color: #f95c0c !important;
+    font-size: 1.5rem !important;
+}
+
+.slick-dots {
+    bottom: -40px !important;
+}
+
+/* .month-select-grid .MuiButtonBase-root.MuiTab-root.Mui-selected {
+    border: 1px solid var(--primary);
+    border-radius: 3px;
+} */
+
+.month-select-grid .MuiButtonBase-root,
+.month-select-grid .MuiButtonBase-root.MuiTab-root.Mui-selected {
+    height: 32px !important;
+    max-height: 32px !important;
+    min-height: 32px !important;
+
+}
+
+.month-select-grid .MuiTabs-indicator {
+    top: 30px !important;
+    z-index: 99999;
+}
+
+.month-select-grid .MuiTabs-root {
+    min-height: 32px !important;
+}
+
+.container_slider_section_champions_title {
+    font-size: 1.4rem !important;
+}
+
+.container_slider_section_champions_message {
+    font-size: 1.2rem !important;
+}

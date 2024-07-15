@@ -6,6 +6,7 @@ import React from "react";
 import { LocalSelect } from "components/select";
 import "./index.css";
 import { QuerterChampionsSlider } from "./quarter-champions";
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 
 const monthsValues = [
@@ -113,6 +114,7 @@ export const TabPanel = (props) => {
 }
 
 export const RewardsAndRecognitions = () => {
+    const matches = useMediaQuery('(max-width:600px)');
     // const currentMonth = monthsValues.find(item => item.value === new Date().getMonth() - 1);
     const currentYear = `${new Date().getFullYear()}`;
     // rewardsImages[currentYear][currentMonth] - 1
@@ -153,7 +155,7 @@ export const RewardsAndRecognitions = () => {
     })
 
     return (
-        <Grid container columns={12} className='reward-tabs'>
+        <Grid container columns={12} className='reward-tabs' id="reward-tabs">
             {/* <Grid item xs={12} lg={1} md={1} sm={12} xl={1}></Grid> */}
             <Grid item xs={12} lg={12} md={12} sm={12} xl={12} mb={10}>
                 <QuerterChampionsSlider />
@@ -182,7 +184,7 @@ export const RewardsAndRecognitions = () => {
                     })}
                 </Tabs>
             </Grid>
-            <Grid item xs={12} lg={12} md={12} sm={12} xl={12}>
+            <Grid item xs={12} lg={12} md={12} sm={12} xl={12} id="reward-tabs-vertical">
                 <Box sx={{ bgcolor: 'background.paper', display: 'flex', width: "100%" }}>
                     <Tabs
                         orientation="vertical"

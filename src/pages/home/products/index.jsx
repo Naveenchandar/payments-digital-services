@@ -27,6 +27,7 @@ import EnterPriseIcon from "images/units/enterprise.png";
 import { GiPlatform } from "react-icons/gi";
 import { ProductProperties } from './ProductProperties';
 import { Underline } from 'components/underline';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 const { TabName, UnitTab } = ProductProperties;
 
@@ -56,6 +57,7 @@ function a11yProps(index) {
 
 export function Products() {
     const [value, setValue] = React.useState(0);
+    const matches = useMediaQuery('(max-width:600px)');
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
@@ -73,9 +75,9 @@ export function Products() {
     return (
         <Grid container columns={12} id='tabs-grid' className='unit-tabs'>
             <Grid item xs={12} lg={12} md={12} sm={12} xl={12}>
-                <Box sx={{ bgcolor: 'background.paper', display: 'flex', width: "100%" }}>
+                <Box sx={{ bgcolor: 'background.paper', display: 'flex', width: "100%" }} className="unit-tabs-tab-parent">
                     <Tabs
-                        orientation="vertical"
+                        orientation={matches ? "horizontal" : "vertical"}
                         variant="scrollable"
                         value={value}
                         onChange={handleChange}

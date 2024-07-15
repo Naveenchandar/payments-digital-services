@@ -529,52 +529,190 @@ code {
 
 
 
-  /* ===================== ANIMATIONS ====================== */
+/* ===================== ANIMATIONS ====================== */
 
-  @keyframes scale-in-hor-right {
-    0% {
-      -webkit-transform: scaleX(0);
-      transform: scaleX(0);
-      -webkit-transform-origin: 100% 100%;
-      transform-origin: 100% 100%;
-      opacity: 1;
-    }
+@keyframes scale-in-hor-right {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    opacity: 1;
+  }
 
-    100% {
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1);
-      -webkit-transform-origin: 100% 100%;
-      transform-origin: 100% 100%;
-      opacity: 1;
-    }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    opacity: 1;
+  }
+}
+
+
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 601px) {
+  #teams-section .about-us .MuiTabs-flexContainer {
+    flex-direction: column !important;
+    position: fixed !important;
+    z-index: 9999;
+    width: 100%;
+    background-color: #f3f3f3;
+    align-items: center !important;
+  }
+
+  #teams-section .about-us .MuiTab-root {
+    padding: 0.5rem !important;
+    font-size: 0.75rem !important;
+    min-height: 2rem !important;
+  }
+
+  #teams-section .about-us .MuiTabs-root {
+    min-height: 10rem !important;
+  }
+
+  #simple-tabpanel-1 {
+    padding-top: 8px;
+  }
+
+  .MuiTabs-scroller {
+    display: flex;
+    justify-content: center !important;
+  }
+
+  .MuiTabs-indicator {
+    display: none !important;
   }
 
 
-
-  @-webkit-keyframes text-focus-in {
-    0% {
-      -webkit-filter: blur(12px);
-      filter: blur(12px);
-      opacity: 0;
-    }
-
-    100% {
-      -webkit-filter: blur(0px);
-      filter: blur(0px);
-      opacity: 1;
-    }
+  /* units tab */
+  #tabs-grid.unit-tabs .MuiTabs-flexContainer {
+    flex-direction: initial !important;
+    position: initial !important;
+    z-index: initial;
+    width: initial;
+    background-color: initial;
+    overflow: scroll !important;
   }
 
-  @keyframes text-focus-in {
-    0% {
-      -webkit-filter: blur(12px);
-      filter: blur(12px);
-      opacity: 0;
-    }
-
-    100% {
-      -webkit-filter: blur(0px);
-      filter: blur(0px);
-      opacity: 1;
-    }
+  #tabs-grid.unit-tabs .unit-tabs-tab-parent {
+    flex-direction: column !important;
   }
+
+  #tabs-grid .MuiTabs-flexContainer .MuiTab-root span {
+    font-size: 9px !important;
+  }
+
+  #tabs-grid .MuiTabs-flexContainer .MuiTab-root svg {
+    min-height: 16px !important;
+    min-width: 16px !important;
+  }
+
+
+  /* rewards-recognitions tab */
+
+  .slider-container_slider_section_champions_image .local_card {
+    align-items: baseline !important;
+    flex-direction: column !important;
+  }
+
+  .slider-container_slider_section_champions_image .local_card>div {
+    margin: 0 auto !important;
+  }
+
+  .slider-container .local_card .local_card_card_media {
+    height: 100px !important;
+    width: 100px !important;
+  }
+
+  .local_card .container_slider_section_champions_title {
+    font-size: 0.7rem !important;
+  }
+
+  .local_card .container_slider_section_champions_title>b {
+    font-size: 0.8rem !important;
+  }
+
+  .local_card .container_slider_section_champions_message {
+    font-size: 0.75rem !important;
+    overflow: scroll;
+    height: 100px;
+  }
+
+  #reward-tabs #reward-tabs-vertical .MuiPaper-root.MuiCard-root {
+    flex-direction: column !important;
+  }
+
+  #reward-tabs .month-select-grid .MuiTabs-flexContainer {
+    flex-direction: row !important;
+    overflow: scroll !important;
+  }
+
+  #reward-tabs .month-select-grid .MuiTabs-root {
+    min-height: 3rem !important;
+  }
+  
+  #reward-tabs #reward-tabs-vertical {
+    padding-top: 1rem !important;
+  }
+
+
+  /* news letter tab */
+  #news-letter-tab #news-letter-tab-year .MuiTabs-flexContainer {
+    flex-direction: row !important;
+  }
+
+  #news-letter-tab #news-letter-tab-year .dHWHqM,
+  #news-letter-tab #news-letter-tab-timeline-wrapper .jsVFgY.right {
+    display: none !important;
+  }
+
+  #news-letter-tab .card-content-wrapper.visible.right {
+    width: 100% !important;
+  }
+
+  #news-letter-tab #news-letter-tab-timeline-wrapper .MuiBox-root {
+    padding: 0 !important;
+  }
+
+  #news-letter-tab #news-letter-tab-year .MuiTabs-root {
+    min-height: initial !important;
+  }
+
+  #news-letter-tab .MuiTabs-root.MuiTabs-vertical {
+    border-right: 0px !important;
+    min-height: 4rem !important;
+  }
+}

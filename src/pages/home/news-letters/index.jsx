@@ -3,6 +3,7 @@ import { VerticalTimeline } from "components/timeline";
 import { newsLetters } from "content/news-letters";
 import React from "react";
 import { yearTabs } from "../tabs";
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 const TabName = ({ children }) => {
     return (
@@ -40,6 +41,7 @@ export const TabPanel = (props) => {
 
 export const NewsLetters = () => {
     const [currentTabValue, setCurrentTabValue] = React.useState("2024");
+    const matches = useMediaQuery('(max-width:600px)');
 
     const handleChange = (event, newValue) => {
         setCurrentTabValue(newValue);
@@ -47,7 +49,7 @@ export const NewsLetters = () => {
 
     const renderTimelineContent = () => {
         if (newsLetters?.[currentTabValue]) {
-            return <VerticalTimeline items={newsLetters?.[currentTabValue]} />
+            return <VerticalTimeline items={newsLetters?.[currentTabValue]} matches={matches} />
         }
         return null;
     }
@@ -59,9 +61,9 @@ export const NewsLetters = () => {
     })
 
     return (
-        <Grid container columns={12} className='reward-tabs'>
+        <Grid container columns={12} className='reward-tabs' id="news-letter-tab">
             <Grid item xs={12} lg={12} md={12} sm={12} xl={12}>
-                <Box sx={{ bgcolor: 'background.paper', display: 'flex', width: "100%" }}>
+                <Box sx={{ bgcolor: 'background.paper', display: 'flex', width: "100%", flexDirection: matches ? 'column' : 'row' }}>
                     <Tabs
                         orientation="vertical"
                         variant="scrollable"
@@ -69,6 +71,7 @@ export const NewsLetters = () => {
                         onChange={handleChange}
                         aria-label="Vertical tabs example"
                         sx={{ borderRight: 1, borderColor: 'divider', minWidth: "250px" }}
+                        id="news-letter-tab-year"
                     >
                         {tabsName?.map(({ label, text, Icon }, index) => {
                             return (
@@ -76,7 +79,7 @@ export const NewsLetters = () => {
                             )
                         })}
                     </Tabs>
-                    <TabPanel value={currentTabValue} index={currentTabValue} className="w-100">
+                    <TabPanel value={currentTabValue} index={currentTabValue} className="w-100" id="news-letter-tab-timeline-wrapper">
                         {renderTimelineContent()}
                     </TabPanel>
                 </Box>

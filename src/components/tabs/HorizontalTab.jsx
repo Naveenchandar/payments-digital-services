@@ -43,7 +43,7 @@ export const HorizontalTabs = ({ currentTabvalue = 1, handleChange, tabs = [], c
     return (
         <Box sx={{ width: '100%' }}>
             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                <Tabs value={currentTabvalue} onChange={handleChange} aria-label="basic tabs example">
+                <Tabs value={currentTabvalue} onChange={handleChange} aria-label="basic tabs example" id={`current-active-tab-${currentTabvalue}`}>
                     {tabs.map(item => {
                         return (
                             <Tab label={item?.name} {...a11yProps(item.value)} value={item.value} key={item.value}/>

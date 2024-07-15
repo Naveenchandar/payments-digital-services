@@ -683,9 +683,41 @@ code {
   #reward-tabs .month-select-grid .MuiTabs-root {
     min-height: 3rem !important;
   }
-  
+
   #reward-tabs #reward-tabs-vertical {
     padding-top: 1rem !important;
+  }
+
+  #reward-tabs .slider_section {
+    padding: 0rem !important;
+  }
+
+  #reward-tabs #reward-tabs-quarter-champions-grid {
+    max-width: 94% !important;
+  }
+
+  #reward-tabs #reward-tabs-quarter-champions-grid .slick-dots li button::before {
+    top: 56px !important;
+  }
+
+  #reward-tabs #reward-tabs-content {
+    margin-top: 1rem !important;
+  }
+
+  #reward-tabs #reward-tabs-content .MuiPaper-root.MuiCard-root {
+    flex-direction: column !important;
+    padding-top: 1rem !important;
+  }
+
+  #reward-tabs .mobile-select .MuiFormLabel-root {
+    text-align: left !important;
+  }
+
+  #reward-tabs .mobile-select .MuiSelect-select {
+    padding: 0.5rem !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    text-align: left !important;
   }
 
 

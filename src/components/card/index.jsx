@@ -18,6 +18,7 @@ export const LocalCard = ({ award, message, image, isEven, name }) => {
                     image={image}
                     alt="spot award"
                     className='local_card_card_media'
+                    loading="lazy"
                 />
             </div>
             <div>

@@ -9,13 +9,13 @@ export const LocalSelect = ({ selectedValue, handleSelectChange, label, options 
 
     return (
         <Box sx={{ minWidth: 120 }}>
+            <InputLabel id="month-select-label">{label}</InputLabel>
             <FormControl fullWidth>
-                <InputLabel id="month-select-label">{label}</InputLabel>
                 <Select
-                    labelId="month-select-label"
+                    // labelId="month-select-label"
                     id="month-select"
                     value={selectedValue}
-                    label="Month"
+                    // label="Month"
                     onChange={handleSelectChange}
                 >
                     {options.map(item => {

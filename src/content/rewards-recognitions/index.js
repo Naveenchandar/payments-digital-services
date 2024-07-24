@@ -1,3 +1,7 @@
+// June-24
+import June24Image1 from "images/awards/june/image1.png";
+import June24Image2 from "images/awards/june/image2.png";
+
 // MAY
 import MayImage1 from "images/awards/may/image1.png";
 import MayImage2 from "images/awards/may/image2.png";
@@ -51,6 +55,24 @@ import ChampionsImage1 from "images/awards/champions/image_1.png";
 
 export const rewardsImages = {
     "2024": {
+        june: [
+            {
+                id: 1,
+                name: "Ms. Shruthi H N",
+                award: "SPOT award",
+                message: `
+                Shruthi has done an exceptional job on delivering Trade SWIFT SFMS integration project for India. Her dedication, attention to detail, and tireless effort have been invaluable. She has not only met the RBI deadline but has also gone above and beyond to support all teams, ensuring a smooth and successful UAT sign-off. Her outstanding performance and unwavering commitment have significantly contributed to the production deployment.Her dedication and commitment to excellence were truly evident throughout the entire year and we greatly appreciate her exceptional efforts.`,
+                image: June24Image1
+            },
+            {
+                id: 2,
+                name: "Ms. Mowna Geetha",
+                award: "SPOT award",
+                message: `
+                    Mowna has successfully delivered crucial enhancements that have significantly improved system functionality and performance. She has been instrumental in maintaining and upgrading our application servers, ensuring they remain secure, up-to-date, and efficient. As one of the key persons for the FIL-FLAN application, Mowna has expertly managed the Business as Usual (BAU) support, consistently providing timely and effective solutions that ensure smooth operations and high user satisfaction. She has also coordinated with users for end-to-end testing, ensuring smooth deployment and post-production verification with zero incidents. Her dedication, exceptional multitasking skills, and proactive approach have been vital in upholding our high standards of service and innovation, paving the way for future growth and success.`,
+                image: June24Image2
+            },
+        ],
         may: [
             {
                 id: 1,

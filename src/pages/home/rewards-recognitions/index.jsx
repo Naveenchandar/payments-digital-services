@@ -66,7 +66,7 @@ const options = [
     { label: "March", value: "March", },
     { label: "April", value: "April", },
     { label: "May", value: "May", },
-    // { label: "June", value: "June", },
+    { label: "June", value: "June", },
     // { label: "July", value: "July", },
     // { label: "August", value: "August", },
     // { label: "September", value: "September", },
@@ -119,8 +119,8 @@ export const RewardsAndRecognitions = () => {
     const currentYear = `${new Date().getFullYear()}`;
     // rewardsImages[currentYear][currentMonth] - 1
     const [currentTabValue, setCurrentTabValue] = React.useState("2024");
-    const [selectedValue, setSelectedValue] = React.useState('May');
-    const [currentTabContent, setCurrentTabContent] = React.useState(rewardsImages?.[currentYear]?.["may"]);
+    const [selectedValue, setSelectedValue] = React.useState('June');
+    const [currentTabContent, setCurrentTabContent] = React.useState(rewardsImages?.[currentYear]?.["june"]);
 
     const handleSelectChange = (event, newValue) => {
         setCurrentTabContent(rewardsImages?.[currentYear]?.[newValue?.toLowerCase()])

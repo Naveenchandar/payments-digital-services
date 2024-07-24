@@ -1,3 +1,7 @@
+// July
+import July24NewsLetterPdf from "images/news-letters/pdf/2024/july_24.pdf";
+import BannerJulyImage from "images/news-letters/july/banner.png";
+
 // May
 import May24NewsLetterPdf from "images/news-letters/pdf/2024/may_24.pdf";
 import BannerMayImage from "images/news-letters/may/banner.png";
@@ -25,6 +29,19 @@ import Banner2023Image from "images/news-letters/pdf/2023/banner.png";
 
 export const newsLetters = {
     "2024": [
+        {
+            title: "July, 24",
+            cardTitle: "July Key Notes",
+            url: July24NewsLetterPdf,
+            media: {
+                source: {
+                    url: BannerJulyImage
+                },
+                type: "IMAGE"
+            },
+            cardSubtitle: ``,
+            cardDetailedText: ``
+        },
         {
             title: "May, 24",
             cardTitle: "May Key Notes",

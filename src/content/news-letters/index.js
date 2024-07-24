@@ -1,6 +1,10 @@
 // July
 import July24NewsLetterPdf from "images/news-letters/pdf/2024/july_24.pdf";
-import BannerJulyImage from "images/news-letters/july/banner.png";
+import BannerJuly24Image from "images/news-letters/july/banner.png";
+
+// June
+import June24NewsLetterPdf from "images/news-letters/pdf/2024/june/june_24.pdf";
+import BannerJune24Image from "images/news-letters/pdf/2024/june/banner.png";
 
 // May
 import May24NewsLetterPdf from "images/news-letters/pdf/2024/may_24.pdf";
@@ -35,7 +39,20 @@ export const newsLetters = {
             url: July24NewsLetterPdf,
             media: {
                 source: {
-                    url: BannerJulyImage
+                    url: BannerJuly24Image
+                },
+                type: "IMAGE"
+            },
+            cardSubtitle: ``,
+            cardDetailedText: ``
+        },
+        {
+            title: "June, 24",
+            cardTitle: "June Key Notes",
+            url: June24NewsLetterPdf,
+            media: {
+                source: {
+                    url: BannerJune24Image
                 },
                 type: "IMAGE"
             },
